@@ -92,3 +92,11 @@ body {
     gap: 1.5rem;
 }
 
+.section-1 {
+    height: 100vh;
+    background-color: #684545;
+    color: var(--text-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
