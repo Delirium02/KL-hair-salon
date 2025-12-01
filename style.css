@@ -55,13 +55,16 @@ h1, h2, h3, h4, h5, h6 {
     --primary-color: #ff6f61;
     --secondary-color: #4a90e2;
     --accent-color: #f5a623;
-    --background-color: #1c1c1c;
+    --light-background-color: #e1e1e1;
+    --dark-background-color: #1c1c1c;
     --text-color: rgb(255, 255, 255);
     --dark-text-color: rgb(24, 24, 24);
-    --hover-color: #252525;
+    --hover-color: rgb(255, 237, 170);
+    --dark-hover-color: #322400;
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #d3d3d3;
     color: #333;
@@ -77,10 +80,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1c1c1c;
+    background-color: var(--dark-background-color);
     padding: 1rem 2rem;
     color: rgb(229, 229, 229);
-    box-shadow: 0 2px 4px rgba(0, 13, 255, 0.7);
+    box-shadow: 0 4px 8px var(--hover-color, 0.9);
     position: relative;
     z-index: 1;
 }
@@ -119,8 +122,8 @@ body {
 }
 
 .section-1 {
-    height: 100vh;
-    background-color: #b6cdd5;
+    height: 50vh;
+    background-color: var(--light-background-color);
     color: var(--dark-text-color);
     padding: 4rem 2rem;
 }
@@ -132,10 +135,11 @@ p {
 #gallery-btn {
   display: inline-block;
   padding: 0.6em;
+  margin: 0.2rem;
   border-radius: 10px;
   border: 2px solid var(--accent-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--light-background-color);
+  color: var(--dark-text-color);
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -147,5 +151,37 @@ p {
 
 #gallery-btn:active {
   transform: scale(0.95);
-  background-color: var(--background-color);
+  background-color: var(--light-background-color);
+}
+
+#book-btn {
+  display: inline-block;
+  padding: 0.6em;
+  margin: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--dark-background-color);
+  color: var(--text-color);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#book-btn:hover {
+  cursor: pointer;
+  background-color: var(--dark-hover-color);
+  transform: scale(1.05);
+}
+
+#book-btn:active {
+  transform: scale(0.95);
+  background-color: var(--dark-background-color);
+}
+
+.section-2 {
+  height: 50vh;
+}
+
+.main-images {
+  display: flex;
+  background-color: var(--light-background-color);
+  gap: 20px;
 }
