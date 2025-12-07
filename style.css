@@ -200,6 +200,7 @@ p {
 
 .section-2 {
   height: 50vh;
+  margin-bottom: 2rem;
 }
 
 .image-gallery {
@@ -212,19 +213,24 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: rgb(69, 24, 24)/*, var(--light-background-color)*/;
-  padding: 4rem;
+  padding: 0.2rem;
   gap: 20px;
-  border: 2px solid crimson;
-  overflow: none;
   margin: 2em 1em;
+  /*fig captions ?? **/
 }
 
+.image-gallery>figure>img {
+  height: 5fr;
+  width: 5fr;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
 
-
-
-
-
+.image-gallery>figure>img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 
 
 
