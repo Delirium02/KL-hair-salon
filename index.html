@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KL Hair Salon</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav id="navbar">
-          <a id="logo" data-text="KL Hair Salon" href="#">KL Hair Salon</a>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KL Hair Salon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">KL Hair Salon</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking" class="btn-nav">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Classic Cuts & Modern Styling</h1>
+      <p>Quality haircutting and traditional hot towel shaves in a comfortable environment.</p>
+      <a href="#booking" class="btn-primary">Book an Appointment</a>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Services & Pricing</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Standard Haircut</h3>
+        <p class="price">$35</p>
+        <p>Consultation, precise cut, style, and neck shave.</p>
       </div>
-    </header>
-
-    <main>
-      <section class="section-1">
-        <div class="container">
-          <h1>Welcome to KL Hair Salon</h1>
-          <p>We provide the best haircuts</p>
-          <button id="gallery-btn">See Gallery</button>
-          <button id="book-btn">Book Online</button>
-        </div>
-      </section>
-
-      <section class="section-2">
-        <div class="container">
-          <div class="image-gallery">
-            <figure>
-              <img class="main-images" src="./img-1.jpg" alt="placeholder" />
-            </figure>
-            <figure>
-              <img class="main-images" src="#" alt="placeholder" />
-            </figure>
-            <figure>
-              <img class="main-images" src="#" alt="placeholder" />
-            </figure>
-            <figure>
-              <img class="main-images" src="#" alt="placeholder" />
-            </figure>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p><img src="./c.png" alt="ⓒ" /> KL Hair Salon. All rights reserved.</p>
+      <div class="card">
+        <h3>Beard Trim & Shape</h3>
+        <p class="price">$25</p>
+        <p>Detailed line-up, hot towel finish, and beard oil.</p>
       </div>
-    </footer>
-  </body>
+      <div class="card">
+        <h3>The Full Package</h3>
+        <p class="price">$55</p>
+        <p>Haircut, beard sculpt, hot towel treatment, and wash.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>The Shop</h2>
+    <div class="gallery-grid">
+      <div class="photo-placeholder">Shop Interior</div>
+      <div class="photo-placeholder">Haircut Sample 1</div>
+      <div class="photo-placeholder">Haircut Sample 2</div>
+    </div>
+  </section>
+
+  <section id="booking" class="container booking-section">
+    <div class="info-side">
+      <h2>Visit Us</h2>
+      <p><strong>Address:</strong> 6/5 Patrick St, Blacktown NSW 2148</p>
+      <p><strong>Hours:</strong> <br>
+        Mon – Wed: 9:00 am – 5:30 pm<br>
+        Thursday: 9:00 am – 7:00 pm<br>
+        Friday: 9:00 am – 5:30 pm<br>
+        Saturday: 9:00 am – 5:30 pm<br>
+        Sunday: 10:00 am – 3:00 pm</p>
+      <p><strong>Phone:</strong> (02) 9622 0044</p>
+    </div>
+    
+    <div class="widget-side">
+      <div class="booking-placeholder">
+        <p>Embedded Booking Widget Goes Here</p>
+        <p class="subtext">(Paste iframe or widget script here)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 KL Hair Salon. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
