@@ -1,84 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KL Hair Salon</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair at KL Salon — Blacktown, NSW</title>
+  <meta name="description"
+    content="Hair at KL Salon in Blacktown, NSW. Rated 4.7 from 172 reviews. Cuts, colour and styling. Call +61 2 9622 0044 to book.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="logo">KL Hair Salon</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#booking" class="btn-nav">Book Now</a>
-    </nav>
+  <header>
+    <div class="nav-bar">
+      <a class="logo" href="#">Hair at KL Salon</a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="nav-button" href="tel:+61296220044">Call to book</a>
+    </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Classic Cuts & Modern Styling</h1>
-      <p>Quality haircutting and traditional hot towel shaves in a comfortable environment.</p>
-      <a href="#booking" class="btn-primary">Book an Appointment</a>
+      <div class="rating-line">
+        <span class="stars">★★★★★</span>
+        <span>4.7 from 172 Google reviews</span>
+      </div>
+      <h1>A neighbourhood salon that knows exactly how you like it cut.</h1>
+      <p class="intro">Hair at KL Salon has been part of Blacktown's Patrick Street strip for years — cuts, colour and
+        styling from people who remember your name and your last appointment.</p>
+      <div class="button-row">
+        <a class="button button-dark" href="tel:+61296220044">Call +61 2 9622 0044</a>
+        <a class="button button-outline" href="#services">See services and pricing</a>
+      </div>
+      <div class="hero-info">
+        <strong class="open-or-closed"></strong><br>· Mon–Wed &amp; Fri 9am–5:30pm <br>· Thu 9am–7pm <br>· Sat
+        9am–5:30pm <br>· Sun 10am–3pm.
+        <br>6/5 Patrick St, Blacktown NSW 2148.
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="pattern-overlay">
+        <img src="./images/kl-hair-salon.jpg" alt="Salon entrance"> </img>
+      </div>
+      <div class="image-caption">Photo of the salon floor — swap in</div>
     </div>
   </section>
 
-  <section id="services" class="container">
-    <h2>Services & Pricing</h2>
-    <div class="services-grid">
-      <div class="card">
-        <h3>Standard Haircut</h3>
-        <p class="price">$35</p>
-        <p>Consultation, precise cut, style, and neck shave.</p>
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Services</span>
+        <h2>Cuts, colour and finishing, priced plainly.</h2>
+        <p>Every service starts with a quick consult so you know what you're getting before the cape goes on. Prices
+          below are a starting guide — final price depends on hair length and thickness.</p>
       </div>
-      <div class="card">
-        <h3>Beard Trim & Shape</h3>
-        <p class="price">$25</p>
-        <p>Detailed line-up, hot towel finish, and beard oil.</p>
+      <div class="services-grid">
+        <div class="services-column">
+          <div class="service-item">
+            <div><span class="service-name">Women's cut &amp; finish</span><span class="service-detail">Wash, cut,
+                blow-dry</span></div>
+            <div class="service-price">from $65</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Men's cut</span><span class="service-detail">Wash, cut, style</span></div>
+            <div class="service-price">from $35</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Kids' cut</span><span class="service-detail">Under 12</span></div>
+            <div class="service-price">from $25</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Fringe trim</span><span class="service-detail">Between full cuts</span>
+            </div>
+            <div class="service-price">$15</div>
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="service-item">
+            <div><span class="service-name">Full colour</span><span class="service-detail">Root to tip, single
+                tone</span></div>
+            <div class="service-price">from $120</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Foils &amp; balayage</span><span class="service-detail">Half or full
+                head</span></div>
+            <div class="service-price">from $150</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Blow-dry &amp; style</span><span class="service-detail">No cut</span></div>
+            <div class="service-price">from $45</div>
+          </div>
+          <div class="service-item">
+            <div><span class="service-name">Occasion styling</span><span class="service-detail">Formals, weddings</span>
+            </div>
+            <div class="service-price">from $80</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>The Full Package</h3>
-        <p class="price">$55</p>
-        <p>Haircut, beard sculpt, hot towel treatment, and wash.</p>
+      <p class="pricing-note">Ask in salon or by phone for an exact quote on longer or thicker hair.</p>
+    </div>
+  </section>
+
+  <section class="section section-shaded" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Gallery</span>
+        <h2>Recent work from the chair.</h2>
+        <p>Photos placeholder — swap each tile for a real before/after or finished style once you've got a few good
+          shots.</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <div class="gallery-image photo-color"></div>
+          <div class="texture-overlay"></div>
+          <div class="gallery-caption">Colour</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image photo-cut"></div>
+          <div class="texture-overlay"></div>
+          <div class="gallery-caption">Cut &amp; style</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image photo-balayage"></div>
+          <div class="texture-overlay"></div>
+          <div class="gallery-caption">Balayage</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image photo-occasion"></div>
+          <div class="texture-overlay"></div>
+          <div class="gallery-caption">Occasion</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="gallery" class="container">
-    <h2>The Shop</h2>
-    <div class="gallery-grid">
-      <div class="photo-placeholder">Shop Interior</div>
-      <div class="photo-placeholder">Haircut Sample 1</div>
-      <div class="photo-placeholder">Haircut Sample 2</div>
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Reviews</span>
+        <h2>What Blacktown says.</h2>
+      </div>
+      <div class="reviews-summary">
+        <div>
+          <div class="rating-number">4.7</div>
+          <div class="rating-count">172 Google reviews</div>
+        </div>
+        <div class="divider"></div>
+        <div class="featured-quote">
+          "Replace with a real standout review once you've picked one from Google."
+          <span>— placeholder, swap for an actual quote</span>
+        </div>
+      </div>
+      <div class="reviews-list">
+        <div class="review-item">
+          <span class="stars">★★★★★</span>
+          <p>Placeholder review text. Pull three or four short, specific quotes from your uncle's real Google reviews
+            here.</p>
+          <div class="review-author">— Placeholder name</div>
+        </div>
+        <div class="review-item">
+          <span class="stars">★★★★★</span>
+          <p>Placeholder review text. Real quotes about the actual stylists and service tend to build far more trust
+            than generic praise.</p>
+          <div class="review-author">— Placeholder name</div>
+        </div>
+        <div class="review-item">
+          <span class="stars">★★★★★</span>
+          <p>Placeholder review text. Keep each one short — one or two sentences reads better than a long paragraph.</p>
+          <div class="review-author">— Placeholder name</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="booking" class="container booking-section">
-    <div class="info-side">
-      <h2>Visit Us</h2>
-      <p><strong>Address:</strong> 6/5 Patrick St, Blacktown NSW 2148</p>
-      <p><strong>Hours:</strong> <br>
-        Mon – Wed: 9:00 am – 5:30 pm<br>
-        Thursday: 9:00 am – 7:00 pm<br>
-        Friday: 9:00 am – 5:30 pm<br>
-        Saturday: 9:00 am – 5:30 pm<br>
-        Sunday: 10:00 am – 3:00 pm</p>
-      <p><strong>Phone:</strong> (02) 9622 0044</p>
-    </div>
-    
-    <div class="widget-side">
-      <div class="booking-placeholder">
-        <p>Embedded Booking Widget Goes Here</p>
-        <p class="subtext">(Paste iframe or widget script here)</p>
+  <section class="section section-shaded" id="visit">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Visit</span>
+        <h2>Find us on Patrick Street.</h2>
+      </div>
+      <div class="location">
+        <div class="location-details">
+          <h3>Hair at KL Salon</h3>
+          <div class="detail-row">
+            <div class="detail-label">Address</div>
+            <div class="detail-value">6/5 Patrick St, Blacktown NSW 2148, Australia</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Phone</div>
+            <div class="detail-value"><a href="tel:+61296220044">+61 2 9622 0044</a></div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Hours</div>
+            <div class="detail-value">
+              <table class="hours-list">
+                <tr>
+                  <td>Saturday</td>
+                  <td>9am – 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10am – 3pm</td>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>9am – 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>9am – 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>9am – 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>9am – 7pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>9am – 5:30pm</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="button-row" style="margin-top:28px;">
+            <a class="button button-dark" href="tel:+61296220044">Call to book</a>
+            <a class="button button-outline"
+              href="https://www.google.com/maps/dir/?api=1&destination=6%2F5+Patrick+St%2C+Blacktown+NSW+2148"
+              target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps?q=6%2F5+Patrick+St%2C+Blacktown+NSW+2148%2C+Australia&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing Hair at KL Salon, 6/5 Patrick St, Blacktown NSW 2148">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 KL Hair Salon. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-name">Hair at KL Salon</div>
+          <div class="footer-address">6/5 Patrick St, Blacktown NSW 2148, Australia</div>
+        </div>
+        <div class="footer-phone"><a href="tel:+61296220044">+61 2 9622 0044</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Hair at KL Salon.</span>
+        <span>4.7★ · 172 Google reviews</span>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
