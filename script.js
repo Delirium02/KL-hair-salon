@@ -1,15 +1,15 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-var todayName = days[new Date().getDay()];
+const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+const todayName = days[new Date().getDay()];
 
 document.querySelectorAll('.hours-list tr').forEach(function (row) {
-  var label = row.querySelector('td').textContent.trim().toLowerCase();
+  const label = row.querySelector('td').textContent.trim().toLowerCase();
   row.classList.toggle('current-day', label === todayName);
 });
 
-var openOrClosed = document.querySelector('.open-or-closed');
-var hours = {
+const openOrClosed = document.querySelector('.open-or-closed');
+const hours = {
   monday: { open: '09:00', close: '17:30' },
   tuesday: { open: '09:00', close: '17:30' },
   wednesday: { open: '09:00', close: '17:30' },
@@ -19,26 +19,21 @@ var hours = {
   sunday: { open: '10:00', close: '15:00' }
 };
 function isOpenNow() {
-  var now = new Date();
-  var today = days[now.getDay()];
-  var tomorrow = days[(now.getDay() + 1) % 7];
-  var currentTime = now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
-  var openTime = hours[today].open;
-  var closeTime = hours[today].close;
+  const now = new Date();
+  const today = days[now.getDay()];
+  const currentTime = now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
+  const openTime = hours[today].open;
+  const closeTime = hours[today].close;
 
-  var [currentHours, currentMinutes] = currentTime.split(':').map(Number);
-  var [openHours, openMinutes] = openTime.split(':').map(Number);
-  var [closeHours, closeMinutes] = closeTime.split(':').map(Number);
+  const [currentHours, currentMinutes] = currentTime.split(':').map(Number);
+  const [openHours, openMinutes] = openTime.split(':').map(Number);
+  const [closeHours, closeMinutes] = closeTime.split(':').map(Number);
 
-  var currentTimeInMinutes = currentHours * 60 + currentMinutes;
-  var openTimeInMinutes = openHours * 60 + openMinutes;
-  var closeTimeInMinutes = closeHours * 60 + closeMinutes;
+  const currentTimeInMinutes = currentHours * 60 + currentMinutes;
+  const openTimeInMinutes = openHours * 60 + openMinutes;
+  const closeTimeInMinutes = closeHours * 60 + closeMinutes;
 
   return currentTimeInMinutes >= openTimeInMinutes && currentTimeInMinutes < closeTimeInMinutes;
 }
 
-if (isOpenNow()) {
-  openOrClosed.textContent = 'Open now.';
-} else {
-  openOrClosed.textContent = 'Closed now.';
-}
+openOrClosed.textContent = isOpenNow() ? 'Open now' : 'Closed now';
