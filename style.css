@@ -255,7 +255,7 @@ header {
 /* ---------- services ---------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-top: 1px solid var(--line);
 }
@@ -526,6 +526,28 @@ footer {
   font-size: 13px;
   color: var(--ink-soft);
   margin-top: 8px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.footer-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon p {
+  margin: 3px 0 0;
+  font-size: 15px;
+}
+
+.footer-icon a {
+  text-decoration: none;
+  color: var(--gold-deep);
 }
 
 .footer-phone {
