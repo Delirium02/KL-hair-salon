@@ -256,6 +256,7 @@ header {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 0;
   border-top: 1px solid var(--line);
 }
@@ -272,6 +273,20 @@ header {
 .service-name {
   font-size: 17px;
   font-weight: 500;
+}
+
+.service-title {
+  color: var(--gold-deep);
+  margin-bottom: 4px;
+}
+
+.service>h4 {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.service>p {
+  margin: 5px 0;
 }
 
 .service-detail {
