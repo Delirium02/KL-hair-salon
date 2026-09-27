@@ -37,3 +37,31 @@ function isOpenNow() {
 }
 
 openOrClosed.textContent = isOpenNow() ? 'Open now' : 'Closed now';
+
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+function closeMenu() {
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Open menu');
+  mobileMenu.classList.remove('open');
+}
+
+function openMenu() {
+  menuToggle.setAttribute('aria-expanded', 'true');
+  menuToggle.setAttribute('aria-label', 'Close menu');
+  mobileMenu.classList.add('open');
+}
+
+menuToggle.addEventListener('click', function () {
+  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+  isOpen ? closeMenu() : openMenu();
+});
+
+mobileMenu.querySelectorAll('a').forEach(function (link) {
+  link.addEventListener('click', closeMenu);
+});
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth > 900) closeMenu();
+});
