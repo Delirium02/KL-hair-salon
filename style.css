@@ -638,7 +638,7 @@ footer {
   }
 
   .hero-image {
-    aspect-ratio: 4/3;
+    height: 350px;
   }
 
   .services-menu {
