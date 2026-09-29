@@ -379,35 +379,10 @@ header {
   inset: 0;
 }
 
-.photo-color {
-  background: linear-gradient(135deg, #2a2622, #4a4038);
-}
-
-.photo-cut {
-  background: linear-gradient(135deg, var(--rose), #c98f83);
-}
-
-.photo-balayage {
-  background: linear-gradient(135deg, var(--gold), #7a5d33);
-}
-
-.photo-occasion {
-  background: linear-gradient(135deg, #3d3833, #1b1917);
-}
-
-.texture-overlay {
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(70deg, rgba(255, 255, 255, 0.10) 0 2px, transparent 2px 16px);
-}
-
-.gallery-caption {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 12px;
-  letter-spacing: 0.3px;
+.gallery-image img {
+  width: 100%;
+  height: 102%;
+  object-fit: cover;
 }
 
 /* ---------- reviews ---------- */
