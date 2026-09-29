@@ -633,8 +633,12 @@ footer {
     padding: 56px 24px 40px;
   }
 
+  .hero-info {
+    font-size: 15px;
+  }
+
   .hero-image {
-    height: 680px;
+    aspect-ratio: 4/3;
   }
 
   .services-menu {
